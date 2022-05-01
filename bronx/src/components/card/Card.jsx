@@ -14,7 +14,7 @@ function Card() {
 
   console.log(cart, 'some burgas')
   console.log(total, 'total')
-  
+
   return (
     <Box
     display='flex'
@@ -22,7 +22,8 @@ function Card() {
     flexWrap='wrap'
     justifyContent='center'
     alignItems='center'
-    w='80%'
+    w={{base:'100%', md:'80%'}}
+    
     m='auto'
     >
       {burgerData.map(burger => (
