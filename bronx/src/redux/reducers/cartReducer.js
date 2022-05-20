@@ -33,7 +33,7 @@ const cartReducer = (state = initialState, action) => {
               totalQty: TotalQty(cartAux)
           }
       case 'cart/removeFromCart':
-          console.log(action.payload.burger.id)
+        //   console.log(action.payload.burger.id)
           const cart = state.cart.filter(item => item.burger.id !== action.payload.burger.id);
           return {
               ...state,
@@ -44,7 +44,7 @@ const cartReducer = (state = initialState, action) => {
       case 'cart/updateCart':
           const cartAux2 = [...state.cart]
           const index = cartAux2.findIndex(item => item.burger.id === action.payload.id)
-          console.log(index, 'holu')
+        //   console.log(index, 'holu')
           cartAux2[index].qty = action.payload.bool ? cartAux2[index].qty + 1 : cartAux2[index].qty - 1
         //   localStorage.setItem('cart', JSON.stringify(cartAux2))
           return {

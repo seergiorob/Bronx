@@ -7,7 +7,7 @@ function Hero() {
     <div>
       <Box 
       w='100%'
-      h='200px'
+      h='250px'
       objectFit='cover'
       backgroundColor='black'
       >
@@ -27,7 +27,7 @@ function Hero() {
       </Box>
       <Text
       mt='8'
-      fontSize='3xl'
+      fontSize={{base:'xl', md:'3xl'}}
       >  
         Seleccione su pedido: </Text>
     </div>

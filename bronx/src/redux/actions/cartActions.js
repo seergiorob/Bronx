@@ -1,7 +1,7 @@
 
 const cartActions = {
   addToCart: (burger) => {
-    console.log(burger)
+    // console.log(burger)
       return (dispatch) => {
           dispatch({ type: 'cart/addToCart', payload: burger })
       }
